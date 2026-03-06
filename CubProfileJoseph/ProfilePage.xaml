@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CubProfileJoseph.ProfilePage">
+
+    <VerticalStackLayout Padding="30" 
+                         Spacing="15" 
+                         HorizontalOptions="Center">
+        <Label Text="Student Profile" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center" />
+
+        <Image Source="mascot.jpg" 
+               HeightRequest="200" 
+               HorizontalOptions="Center" />
+
+        <Label Text="Name: Brianna" 
+               FontSize="18" />
+        <Label Text="Major: Computer Science" 
+               FontSize="18" />
+        <Label Text="Graduation Year: 2027" 
+               FontSize="18" />
+
+        <Button Text="Cheer" 
+                Clicked="OnCheerClicked" />
+
+        <Button Text="Back" 
+                Clicked="OnBackClicked" />
+    </VerticalStackLayout>
+</ContentPage>

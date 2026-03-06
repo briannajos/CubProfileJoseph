@@ -1,0 +1,34 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CubProfileJoseph.MainPage">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20">
+            <Image
+                Source="campus.jpg"
+                HeightRequest="200"
+                Aspect="AspectFill"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+            <Label
+                Text="Welcome to Florida Tech Magnet!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                Text="Our campus is a vibrant community focused on innovation and success"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button Text="Show Tip" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnTipClicked"
+                HorizontalOptions="Fill" />
+            <Button Text="Go to Profile"
+                Clicked="OnGoToProfileClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
